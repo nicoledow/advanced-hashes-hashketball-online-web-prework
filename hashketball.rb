@@ -140,6 +140,17 @@ def player_numbers(team)
       end
     end
   end
+  
+   if hash[:away][:team_name] == team
+    hash[:away][:players].each do |player_name, info|
+      info.each do |stat_name, stat_value|
+        if stat_name == :number
+          jersey_numbers << stat_value
+        end
+      end
+    end
+  end
+  
   jersey_numbers
 end
 
