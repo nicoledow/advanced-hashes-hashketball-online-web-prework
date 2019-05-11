@@ -175,7 +175,7 @@ def big_shoe_rebounds
   biggest_shoe_size = 0
   
   hash.each do |location, team_data_set|
-    binding.pry
+    team_data_set.each do |
   end
 end
 
