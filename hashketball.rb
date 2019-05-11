@@ -173,7 +173,7 @@ end
 def big_shoe_rebounds
   hash = game_hash
   biggest_shoe_size = 0
-  player_with_biggest_shoe_size = ""
+  big_shoe_number_of_rebounds = 0
   
   hash.each do |location, team_data_set|
     team_data_set.each do |attribute, info|
@@ -182,7 +182,7 @@ def big_shoe_rebounds
           statistic.each do |stat_label, stat_value|
             if stat_label == :shoe && stat_value > biggest_shoe_size
               biggest_shoe_size = stat_label
-              binding.pry
+              big_shoe_number_of_rebounds = hash[location]
             end
           end
         end
