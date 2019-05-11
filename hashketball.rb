@@ -133,10 +133,10 @@ def player_numbers(team)
   
   if hash[:home][:team_name] == team
     hash[:home][:players].each do |player_name, info|
-      jersey_numbers << 
+      jersey_numbers << player_name[:number]
     end
   end
-  
+  jersey_numbers
 end
 
 player_numbers("Brooklyn Nets")
