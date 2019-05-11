@@ -154,22 +154,6 @@ def player_numbers(team)
   jersey_numbers
 end
 
-def player_stats(player)
-  hash = game_hash
-  player_stats = nil
-  
-  hash.each do |location, team_data_set|
-    team_data_set.each do |attribute, info|
-      if attribute == :players
-        attribute.each do |player_name, player_stats|
-          binding.pry
-        end
-      end
-    end
-  end
-  
-  
-  player_stats
-end
+
 
 player_stats("Jeff Adrien")
