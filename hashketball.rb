@@ -132,7 +132,7 @@ def player_numbers(team)
   hash = game_hash
   
   if hash[:home][:team_name] == team
-    hash[:home][:players].each do |player_name, stat|
+    hash[:home][:players].each do |player_name, info|
       binding.pry
     end
   end
