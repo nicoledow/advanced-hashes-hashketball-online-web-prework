@@ -153,3 +153,13 @@ def player_numbers(team)
   
   jersey_numbers
 end
+
+def player_stats(player)
+  hash = game_hash
+  
+  hash.each do |location, team_data_set|
+    binding.pry
+  end
+end
+
+player_stats("Jeff Adrien")
