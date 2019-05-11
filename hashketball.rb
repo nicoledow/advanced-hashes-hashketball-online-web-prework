@@ -133,7 +133,7 @@ def player_numbers(team)
   
   if hash[:home][:team_name] == team
     hash[:home][:players].each do |player_name, info|
-      binding.pry
+      jersey_numbers << 
     end
   end
   
