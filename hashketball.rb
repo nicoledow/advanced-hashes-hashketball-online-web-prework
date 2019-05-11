@@ -131,9 +131,9 @@ def player_numbers(team)
    hash = game_hash
    jersey_numbers = []
    
-  hash.each do |location, info| 
-    binding.pry
-    info.each do |attribute, stats|
+  hash.each do |location, team_data_set| 
+    team_data_set.each do |attribute, stats|
+      
       if stats.include?(player) 
        return hash[location][attribute][player][:points]
       end
