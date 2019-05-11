@@ -177,7 +177,7 @@ def big_shoe_rebounds
   hash.each do |location, team_data_set|
     team_data_set.each do |attribute, info|
       if attribute == :players
-        attribute.each do |player, stat|
+        info.each do |player, stat|
           binding.pry
         end
       end
