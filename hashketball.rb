@@ -183,7 +183,7 @@ def big_shoe_rebounds
             if stat_label == :shoe && stat_value > biggest_shoe_size
               biggest_shoe_size = stat_label
               binding.pry
-              big_shoe_number_of_rebounds = hash[location][:players][player]
+              big_shoe_number_of_rebounds = hash[location][:players][player].key
             end
           end
         end
