@@ -158,9 +158,9 @@ def player_stats(name)
   player_stats = nil 
   game_hash.each do |home_away, team_data_set|
     team_data_set.each do |attribute, info|
-      binding.pry
       if attribute == :players
         attribute.each do |player_name, player_stats|
+          binding.pry
           if player_name == name
             player_stats = stats
           end
