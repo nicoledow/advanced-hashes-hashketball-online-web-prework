@@ -158,7 +158,9 @@ def player_stats(player)
   hash = game_hash
   
   hash.each do |location, team_data_set|
-    binding.pry
+    if team_data_set[:players].include?(player)
+      return hash[location][team_data_set][player]
+    end
   end
 end
 
