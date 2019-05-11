@@ -161,7 +161,7 @@ def player_stats(player)
   hash.each do |location, team_data_set|
     team_data_set.each do |attribute, info|
       if attribute == :players
-        :players.each do |stat_name, stat_value|
+        hash[location][team_data_set][:players].each do |stat_name, stat_value|
           binding.pry
         end
       end
