@@ -171,4 +171,3 @@ def player_stats(name)
   player_stats
 end
 
-player_stats("Jeff Adrien")
