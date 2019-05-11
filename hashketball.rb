@@ -191,5 +191,3 @@ def big_shoe_rebounds
   end
   big_shoe_number_of_rebounds
 end
-
-big_shoe_rebounds
