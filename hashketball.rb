@@ -158,7 +158,7 @@ def player_stats(name)
   player_stats = nil 
   
   game_hash.each do |home_away, team_data_set|
-    team_data_set.each do |attribute, info|
+    team_data_set.each do |attribute, data|
       if attribute == :players
         attribute.each do |player_name, stats|
           if player_name == name
@@ -170,4 +170,3 @@ def player_stats(name)
   end
   player_stats
 end
-
