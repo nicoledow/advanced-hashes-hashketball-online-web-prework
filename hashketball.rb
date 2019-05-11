@@ -156,10 +156,10 @@ end
 
 def player_stats(name)
   player_stats = nil 
-  game_hash.each do |home_away, team_info|
-    team_info.each do |data_label, data|
-      if data_label == :players
-        data.each do |player_name, stats|
+  game_hash.each do |home_away, team_data_set|
+    team_data_set.each do |attribute, info|
+      if attribute == :players
+        attribute.each do |player_name, player_stats|
           if player_name == name
             player_stats = stats
           end
