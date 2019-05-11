@@ -161,6 +161,7 @@ def player_stats(player)
   hash.each do |location, team_data_set|
     team_data_set.each do |attribute, info|
       binding.pry
+    end
   end
   
   
