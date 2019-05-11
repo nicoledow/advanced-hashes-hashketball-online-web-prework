@@ -133,7 +133,7 @@ def player_numbers(team)
    
   hash.each do |location, team_data_set| 
     team_data_set.each do |attribute, stats|
-      
+      binding.pry
       if stats.include?(player) 
        return hash[location][attribute][player][:points]
       end
