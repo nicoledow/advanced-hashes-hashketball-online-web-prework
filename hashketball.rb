@@ -128,18 +128,11 @@ def team_names
 end
 
 def player_numbers(team)
-   hash = game_hash
-   jersey_numbers = []
-   
-  hash.each do |location, team_data_set| 
-    team_data_set.each do |attribute, stats|
-      if attribute == team
-        stats.each do |player, data|
-          jersey_numbers << player[:number]
-        end
-      end
-    end
-  end
+  jersey_numbers = []
+  hash = game_hash
+  
+  
+  
 end
 
 player_numbers("Brooklyn Nets")
