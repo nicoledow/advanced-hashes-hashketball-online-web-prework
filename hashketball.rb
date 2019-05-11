@@ -156,12 +156,15 @@ end
 
 def player_stats(player)
   hash = game_hash
+  player_stats = nil
   
   hash.each do |location, team_data_set|
-    if team_data_set[:players].include?(player)
-      
-    end
+    team_data_set.each do |attribute, info|
+      binding.pry
   end
+  
+  
+  player_stats
 end
 
 player_stats("Jeff Adrien")
