@@ -135,7 +135,7 @@ def player_numbers(team)
     team_data_set.each do |attribute, stats|
       if attribute == team
         stats.each do |player, data|
-          binding.pry
+          jersey_numbers << player[:number]
         end
       end
     end
