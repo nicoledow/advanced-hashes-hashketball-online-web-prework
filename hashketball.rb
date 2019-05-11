@@ -169,3 +169,11 @@ def player_stats(name)
   end
   player_stats
 end
+
+def big_shoe_rebounds
+  hash = game_hash
+  
+  hash.each do |location, team_data_set|
+    binding.pry
+  end
+end
