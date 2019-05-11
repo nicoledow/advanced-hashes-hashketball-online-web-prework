@@ -153,5 +153,3 @@ def player_numbers(team)
   
   jersey_numbers
 end
-
-player_numbers("Brooklyn Nets")
