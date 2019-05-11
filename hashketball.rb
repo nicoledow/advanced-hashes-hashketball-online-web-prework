@@ -160,7 +160,6 @@ def player_stats(name)
     team_data_set.each do |attribute, info|
       if attribute == :players
         attribute.each do |player_name, player_stats|
-          binding.pry
           if player_name == name
             player_stats = stats
           end
