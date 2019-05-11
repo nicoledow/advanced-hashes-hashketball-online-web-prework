@@ -154,6 +154,20 @@ def player_numbers(team)
   jersey_numbers
 end
 
-
+def player_stats(name)
+  player_stats = nil 
+  game_hash.each do |home_away, team_info|
+    team_info.each do |data_label, data|
+      if data_label == :players
+        data.each do |player_name, stats|
+          if player_name == name
+            player_stats = stats
+          end
+        end
+      end
+    end
+  end
+  player_stats
+end
 
 player_stats("Jeff Adrien")
