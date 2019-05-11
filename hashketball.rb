@@ -131,7 +131,8 @@ def player_numbers(team)
   jersey_numbers = []
   hash = game_hash
   
-  
+  if hash[:home][:team_name] == team
+    hash[:home][:players].each do 
   
 end
 
